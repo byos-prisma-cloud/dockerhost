@@ -25,7 +25,7 @@ echo -e "###### Creating a modified binary and replacing a legitimate binary wit
 echo -e "#include <stdio.h>\nint main() { printf(\"Hello, World\"); return 0; }" > /tmp/main2.c
 gcc /tmp/main2.c -o /usr/bin/main2.o
 
-echo -e "###### starting a netcat listner in the background on port 4444... ######\n"
+echo -e "###### starting a netcat listener in the background on port 4444... ######\n"
 netcat -l 4444 &
 
 sleep infinity
