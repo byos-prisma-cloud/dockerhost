@@ -27,3 +27,5 @@ gcc /tmp/main2.c -o /usr/bin/main2.o
 
 echo -e "###### starting a netcat listner in the background on port 4444... ######\n"
 netcat -l 4444 &
+
+sleep infinity
