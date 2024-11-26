@@ -5,7 +5,6 @@ FROM us-central1-docker.pkg.dev/panw-utd-public-cloud/utd-demo-images/utd-cnsp/u
 COPY default /etc/nginx/sites-available/default
 
 # Replace entrypoint.sh to less aggressive one
-
 COPY entrypoint.sh /opt/
 
 # Expose the port for access
